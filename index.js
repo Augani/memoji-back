@@ -36,4 +36,8 @@ app.get("/v1/:n?/:g?/:s?", function (req, res) {
   res.status(200).send(random(gender, skin, q));
 });
 
+app.get("/", function(req,res){
+    res.send("Use api only")
+})
+
 app.listen(process.env.port || 4000);
