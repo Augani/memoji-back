@@ -1,7 +1,9 @@
 const bodyParser = require("body-parser");
 var express = require("express");
+var cors = require('cors')
 var Pair = require("./pair");
 var app = express();
+app.use(cors());
 app.use(bodyParser.json());
 console.log(Pair["bm"]);
 let URL = (n) =>
