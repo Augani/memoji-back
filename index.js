@@ -42,4 +42,4 @@ app.get("/", function(req,res){
     res.send("Use api only")
 })
 
-app.listen(process.env.port || 4000);
+app.listen(process.env.PORT || 4000);
