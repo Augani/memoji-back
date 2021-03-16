@@ -5,7 +5,7 @@ var Pair = require("./pair");
 var app = express();
 app.use(cors());
 app.use(bodyParser.json());
-console.log(Pair["bm"]);
+
 let URL = (n) =>
   `https://res.cloudinary.com/augani/image/upload/v1615924685/Memoji/Memoji-${n}.png`;
 function List() {
